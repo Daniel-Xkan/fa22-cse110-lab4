@@ -13,4 +13,18 @@
 10. `3`, because it will return the lenth defined by `const` on line 4 `const length = prices.length;`
 11. `[50, 100, 150]`. This is because we are only assigning (pusing) values into the discounted list but not changing it, thus the `const` keyword will not generate error. 
 12. A. student.name B. student['Grad Year'] C. student.greeting()  D. student['Favorite Teacher'].name E. student.courseLoad[0]
-13. A '32', becuase 2 is automatically mapped to string '2  B  C D E F G H
+13. A `32`, becuase 2 is automatically mapped to string '2'  B `1` becuase minus is arithmitic and string '3' auto converted to an int  C `3`, because null is auto convert into int 0 D `3null`, because null coverted to string null based on datatype of string '3' E `4`, because true is translated into int 1 and added to int 3. F `0`, because both false and null map to int 0 and 0 + 0 = 0  G `3undefined` because undefined is map to the string to match witht he type of string '3' H `NaN` because they are map to numbers in subtraction, but undefined cant map into numbers thus returning NaN. 
+14. A `true` because string 2 mapped into int 2 and compared   B `false` because string comparasion is character by character, and 2 is larger than 1 thus false.  C `true`, string 2 mapped into int 2  D `false` because `===` stress the same type but they are different.  E `false` true mapped into int 1 != int 2  F `True`, because Boolean(2) return true, and true === true because of same type and value, thus return true.
+15.  `==` will automatically do typecast, require same value but doesnt require same type. `===` require both the same value and same datatype. 
+16.  see directory
+17.  `[2,4,6]` will be returned. This is because the funciton `doSomething` is passed into the `modifyArray` function. `doSOmething` multiplies the number fo input parameter by 2. By passing `doSomething` in, the `modifyArray` use a for loop to pull out the input from old list and applied the function that doubles the number on each element of the list, and pushing them into a new list and return. Thus, 1,2,3 were pulled out and doubled one by one and pushed into new list to return, getting `[2,4,6]`.
+18.  see directory
+19.  `1 4 3 2` is the output. This is because the setTimeout doesnt wait for excuting the lines below, thus the print statement without setTimeout were printed then the setTimeout with less wait time is printed. 
+<!-- 
+Comparison
+‘2’ > 1
+‘2’ < ‘12’
+2 == ‘2’
+2 === ‘2’
+true == 2
+true === Boolean(2) -->
