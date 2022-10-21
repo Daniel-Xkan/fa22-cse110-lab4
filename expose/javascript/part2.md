@@ -9,3 +9,8 @@
 6. `ReferenceError: discountedPrice is not defined at discountPrices`, since the local variable `discountPrice` declared by let cannot accessed outside its scope, its causing error on the printing statement. 
 7. `150`, since the local variable `i` within loop was not accssed, but instead the finalPrice as discribed in previous problems, is printed. 
 8. `[50, 100, 150]` will be returned similar to question4. There is no error because no one is calling on variable within the loop that used `let` to declare. 
+9. `ReferenceError: i is not defined`. Error because i is only defined within the loop with `let` cannot access outisde loop.
+10. `3`, because it will return the lenth defined by `const` on line 4 `const length = prices.length;`
+11. `[50, 100, 150]`. This is because we are only assigning (pusing) values into the discounted list but not changing it, thus the `const` keyword will not generate error. 
+12. A. student.name B. student['Grad Year'] C. student.greeting()  D. student['Favorite Teacher'].name E. student.courseLoad[0]
+13. A '32', becuase 2 is automatically mapped to string '2  B  C D E F G H
